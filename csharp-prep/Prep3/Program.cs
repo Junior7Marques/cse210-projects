@@ -4,6 +4,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Prep3 World!");
+        Random randomGenerator = new Random();
+        int number = randomGenerator.Next(1, 10);
+        int shoot = 0;
+        while (shoot != number)
+        {
+        Console.Write("Try Guess the Number:  ");
+        shoot = int.Parse(Console.ReadLine());
+        if (shoot == number)
+        {
+            Console.Write("You guessed it!  ");
+        }
+        if (shoot > number)
+        {
+            Console.Write("Lower! ");
+        }
+        if (shoot < number)
+        {
+            Console.Write("Higher! ");
+        }
+        }
     }
 }
