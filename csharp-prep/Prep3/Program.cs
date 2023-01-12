@@ -9,7 +9,7 @@ class Program
         int shoot = 0;
         while (shoot != number)
         {
-        Console.Write("Try Guess the Number:  ");
+        Console.Write("Try to Guess the Number:  ");
         shoot = int.Parse(Console.ReadLine());
         if (shoot == number)
         {
